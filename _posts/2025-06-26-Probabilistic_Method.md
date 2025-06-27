@@ -1,5 +1,5 @@
 ---
-title: Probabilistic Method
+title: Probabilistic Method - Intro
 date: 2025-06-26 23:50:40 +0900
 categories: [Mathematics, Probability]
 tags: [mathematics, probability, probabilistic method]
