@@ -3,6 +3,7 @@ title: The Basic Counting Arguments
 date: 2025-06-27 18:10:40 +0900
 categories: [Mathematics, Probability]
 tags: [mathematics, probability, probabilistic method]
+use_math: true
 ---
 > 그래프에 대한 기본(?) 지식이 필요해요!
 

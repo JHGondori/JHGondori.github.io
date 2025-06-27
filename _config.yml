@@ -31,7 +31,12 @@ github:
 twitter:
   username: twitter_username # change to your Twitter username
 
-math: true
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 social:
   # Change to your full name.
