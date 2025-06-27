@@ -3,7 +3,7 @@ title: The Basic Counting Arguments
 date: 2025-06-27 18:10:40 +0900
 categories: [Mathematics, Probability]
 tags: [mathematics, probability, probabilistic method]
-use_math: true
+math: true
 ---
 > 그래프에 대한 기본(?) 지식이 필요해요!
 
@@ -39,6 +39,7 @@ $K_n$의 모든 간선을 독립적으로 $\frac{1}{2}$의 확률로 빨간색 �
 숫자 스케일이 감이 안와서 wolframalpha로 $n=1000$ 일 때 $k$가 얼마 이상이어야 저 요상한 조건을 만족하는지 계산해보았는데, $k=16$부터 만족하더라고요. 즉 $k$가 이 값 이상이 되면 모든 $k$-cliques가 단색이 아니도록 하는 색칠법이 존재하게 됩니다. 
 
 그리고 $n=1000, k=20$일 때 $\binom{n}{k} 2^{-\binom{k}{2}+1} \simeq 4.3\times 10^{-16}$이 나옵니다. 즉, 랜덤하게 색칠했을 때 monochromatic 20-clique가 없을 확률이 무려 $1-4.3\times 10^{-16}$이 됩니다. 그냥 대충 그려도 없을 거 같네요..ㅎㅎ
+
 만약 단색인 $k$ - cliques가 없는 색칠법을 찾고 싶다면 Monte-Carlo Algorithm을 무지성으로 갖다 박아도 될 거 같네요.
 
 ## References

@@ -66,9 +66,36 @@
 
 {% if page.math %}
   <!-- MathJax -->
-  <script src="{{ '/assets/js/data/mathjax.js' | relative_url }}"></script>
-  <script async src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="{{ site.data.origin[type].mathjax.js | relative_url }}"></script>
+  <script>
+  /* see: <https://docs.mathjax.org/en/latest/options/input/tex.html#tex-options> */
+  MathJax = {
+    tex: {
+      inlineMath: [              /* start/end delimiter pairs for in-line math */
+        ['$','$'],
+        ['\\(','\\)']
+      ],
+      displayMath: [             /* start/end delimiter pairs for display math */
+        ['$$', '$$'],
+        ['\\[', '\\]']
+      ],
+      tags: 'all',             /* 'none' or 'ams' or 'all' */
+      macros: {                /* maros that I usually use in texstudio */
+        Re:  ['\\operatorname{Re}\\left({#1}\\right)', 1], /* real part with expandable parentheses */
+        Im:  ['\\operatorname{Im}\\left({#1}\\right)', 1], /* imag part with expandable parentheses */
+        EV:  ['\\mathbb{E}\\left({#1}\\right)', 1],        /* expected value */
+        bs:  ['\\boldsymbol{#1}', 1],                      /* bold symbol. Also works with greek letters */
+        vc:  ['\\mathrm{vec}\\left({#1}\\right)', 1],      /* vec() operator */
+        cov: ['\\mathrm{cov}\\left({#1}\\right)', 1],      /* covariance operator */
+        var: ['\\mathrm{var}\\left({#1}\\right)', 1],      /* variance operator */
+        std: ['\\mathrm{std}\\left({#1}\\right)', 1],      /* standard deviation operator */
+        overbar: ['\\mkern 1.5mu\\overline{\\mkern-1.5mu#1\\mkern-1.5mu}\\mkern 1.5mu', 1],      /* nice wide overbar */
+      }
+    }
+  };
+  </script>
+  <script src="{{ site.data.assets[origin].polyfill.js | relative_url }}"></script>
+  <script id="MathJax-script" async src="{{ site.data.assets[origin].mathjax.js | relative_url }}">
+  </script>
 {% endif %}
 
 <!-- Pageviews -->
