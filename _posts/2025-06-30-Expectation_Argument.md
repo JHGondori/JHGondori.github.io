@@ -30,7 +30,7 @@ $$
 
 Theorem부터 어떤 느낌으로 쓸 건지 감이 오실 겁니다. 그냥 랜덤하게 뽑을 때의 기댓값 이상일 확률, 이하일 확률이 모두 0보다 크다는 점을 이용하면 바로 존재성을 증명할 수 있겠죠. 
 
-이 방법을 활용하는 문제들은 그냥 문제를 잘 이해하고 확률변수만 잘 설정해주면 쉽게 풀 수 있습니다. 그래서 예시를 하나 풀어보고, 좀 더 나아가서 Derandomization까지 하는 방법을 알아가보도록 합시다.(요놈은 다음 포스트에!)
+이 방법을 활용하는 문제들은 그냥 문제를 잘 이해하고 확률변수만 잘 설정해주면 쉽게 풀 수 있습니다. (근데 그게 가장 어려운거 같아요.) 그래서 이해를 돕기 위한 예시를 하나 풀어보도록 할게요.
 
 ### Example - Finding a Large Cut
 만약 그래프 $G = (V, E)$가 $m$개의 간선을 가지고 있고, 각 간선의 가중치가 1일 때, Maximum cut의 값은 최소 $m/2$이다. 
@@ -93,15 +93,17 @@ $$
 \Pr\left( C(A, B)\geq \frac{m}{2} \right) \gt 0
 $$
 
-따라서, Maximum Cut value의 하한값은 $\frac{m}{2}$임을 알 수 있습니다. 증명 끝!
+따라서, Maximum Cut value은 적어도 $\frac{m}{2}$임을 알 수 있습니다. 증명 끝!
 
 ---
 
-솔직히, Expectation Argument만으로는 별 내용이 없습니다. 그냥 기댓값을 구하고 딸깍하면 바로 풀린다는 것이 전부죠.. 문제를 이해하는 게 가장 빡세다고 볼 수 있습니다.
+솔직히, Expectation Argument만으로는 별 내용이 없습니다. 그냥 기댓값을 구하고 딸깍하면 바로 풀린다는 것이 전부죠.. 문제를 이해하는 게 가장 빡세다고 볼 수 있습니다. (~~배울 때 Probabilistic method을 배우는 건지 그래프 이론을 배우는 건지 구분할 수가 없었..~~)
 
 학교에서 $k-SAT$에 적용하는 예시도 배웠는데, 얘도 그냥 MAX-SAT가 뭔지 알아보고 한번 써보는 수준이었습니다. 딱히 별건 없어요. 
  
-그래서 추가적인 내용 같은(?) 유익한(?) Expectation을 이용하는 deterministic construction algorithm을 다음 포스트에서 알아볼 겁니다. 이 방법을 Derandomization이라고 해요. 원래는 안 쓰려고 했는데... 여긴 내용이 뭐가 없어서 쓰면 좋을 것 같네요. 
+그래서 추가적인 내용 같은(?) 유익한(?) Expectation을 이용하는 deterministic construction algorithm을 다음 포스트에서 알아볼 겁니다. 이 방법을 Derandomization이라고 해요. 
+
+뜬금없이 왜 알고리즘이 나오는지 의문이 드실 수 있지만... 나중에 배울 다른 Probabilistic method를 이해할 때 도움이 될겁니다. (Maybe...)
 
 ## References
 -   Mitzenmacher, M., & Upfal, E. (2005). Probability and computing: Randomization and probabilistic techniques in algorithms and data analysis. Cambridge university press.
