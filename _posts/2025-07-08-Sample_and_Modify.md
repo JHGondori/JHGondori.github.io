@@ -7,6 +7,7 @@ math: true
 ---
 
 > 중간에 좀 공백이 있었지만... 마저 꾸준히 쓰는걸로...!
+
 ## Sample and Modify
 바로 전 post인 Derandomization에서 probabilistic method로 원하는 object를 무조건 얻어낼 수 있는 방법을 알아보았습니다. 요리조리 잘 하면서 randomness를 줄여서 원하는 속성을 만족하도록 구성했죠. 
 
@@ -63,6 +64,9 @@ Expectation argument를 이용하면 Independent set의 정점 개수는 적어�
 ### Example 2 (Graph with large girth)
 $k$가 3 이상이고, $n$이 충분히 크다면, $n$개의 정점을 가지는 그래프 중 적어도 $\frac{1}{4}n^{1+1/k}$ 개의 간선을 가지고, 적어도 girth $k$를 가지는 그래프가 존재한다.
 
+### Proof
+Girth가 뭔지부터 알아봐야겠죠?
+
 #### Graph girth?
 이거도 정의가 그렇게 어렵지는 않습니다. Graph girth는 graph가 포함하는 가장 길이가 짧은 cycle입니다. 만약 acyclic graph 같이 cycle이 없으면, graph girth는 무한으로 정의됩니다. 
 
@@ -75,14 +79,16 @@ Wikipedia에 graph girth 문서에 들어가보니 간선의 개수가 많아도
 #### Random graph models
 이 문제를 풀 때 random graph model을 알면 수월합니다. Random graph models는 $|V|=n$인 무방향 그래프 $G = (V, E)$를 랜덤하게 고르는 모델입니다. 
 1. $G_{n, p}$ model
+
 	$G_{n, p}$ model은 모든 정점 쌍 $(u, v)$를 독립적으로 $p$의 확률로 간선 집합 $E$에 넣는 모델입니다. 
     이 $G_{n, p}$ model로 만들어진 그래프 중 $m$개의 간선을 가진 그래프가 만들어질 확률은 아래와 같이 나타나게 될 겁니다.
 
-$$ 
-p^m(1-p)^{n(n-1)/2-m}
-$$
+    $$ 
+    p^m(1-p)^{n(n-1)/2-m}
+    $$
 
 2. $G_{n, N}$ model
+
 	$G_{n, N}$ model은 그냥 모든 가능한 정점 $n$개, 간선 $N$개의 무방향 그래프 중 하나를 서로 동등한 확률로 뽑는 모델입니다. 그렇다면 어떤 한 그래프가 뽑힐 확률은 아래와 같이 나타나게 될 겁니다.
 
 $$
