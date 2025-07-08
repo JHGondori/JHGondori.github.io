@@ -20,9 +20,11 @@ math: true
 이건 진짜 말로는 하나도 이해가 되지 않더라고요...(~~뭐 제대로 된 설명도 없는데~~) 그래서 예시와 함께 이해해봅시다.
 
 ### Example 1 (Independent Set)
+<blockquote class = "theorem">
 
 만약 그래프가 $n$개의 정점과 $m$개의 간선을 가지고 있으면, 최소 $n^2/4m$ 개의 정점을 가지는 independent set을 가진다.
 
+</blockquote>
 ### Proof
 짧고 굵죠... 일단 Independent set이 뭔지부터 알아봅시다.
 
@@ -62,7 +64,11 @@ Expectation argument를 이용하면 Independent set의 정점 개수는 적어�
 이거만으로는 이해하기 어려우니... 하나만 더 보죠.
 
 ### Example 2 (Graph with large girth)
+<blockquote class = "theorem">
+
 $k$가 3 이상이고, $n$이 충분히 크다면, $n$개의 정점을 가지는 그래프 중 적어도 $\frac{1}{4}n^{1+1/k}$ 개의 간선을 가지고, 적어도 girth $k$를 가지는 그래프가 존재한다.
+
+</blockquote>
 
 ### Proof
 Girth가 뭔지부터 알아봐야겠죠?
@@ -91,9 +97,9 @@ Wikipedia에 graph girth 문서에 들어가보니 간선의 개수가 많아도
 
 	$G_{n, N}$ model은 그냥 모든 가능한 정점 $n$개, 간선 $N$개의 무방향 그래프 중 하나를 서로 동등한 확률로 뽑는 모델입니다. 그렇다면 어떤 한 그래프가 뽑힐 확률은 아래와 같이 나타나게 될 겁니다.
 
-$$
-\binom{n(n-1)/2}{N}^{-1}
-$$
+    $$
+    \binom{n(n-1)/2}{N}^{-1}
+    $$
 
 #### Back to Proof
 다시 증명으로 돌아와 봅시다. 아래와 같은 sample and modify를 하는 랜덤 알고리즘을 생각해봅시다.

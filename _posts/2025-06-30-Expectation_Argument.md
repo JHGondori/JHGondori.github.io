@@ -12,7 +12,12 @@ math: true
 제목 그대로 기댓값을 사용하는 겁니다! 이 아이디어는 아래 정리에서 나옵니다.
 
 ### Theorem
+<blockquote class = "theorem">
+
 만약 $E[X]=\mu$라면, $\Pr(X\geq\mu)\gt 0$ 와 $\Pr(X\leq\mu)\gt 0$이 성립한다.
+
+</blockquote>
+
 ### Proof
 ~~솔직히... 자명하죠~~
 
@@ -33,7 +38,12 @@ Theorem부터 어떤 느낌으로 쓸 건지 감이 오실 겁니다. 그냥 랜
 이 방법을 활용하는 문제들은 그냥 문제를 잘 이해하고 확률변수만 잘 설정해주면 쉽게 풀 수 있습니다. (근데 그게 가장 어려운거 같아요.) 그래서 이해를 돕기 위한 예시를 하나 풀어보도록 할게요.
 
 ### Example - Finding a Large Cut
+<blockquote class = "theorem">
+
 만약 그래프 $G = (V, E)$가 $m$개의 간선을 가지고 있고, 각 간선의 가중치가 1일 때, Maximum cut의 값은 최소 $m/2$이다. 
+
+</blockquote>
+
 ### Proof
 #### Cut?
 일단 cut이 뭔지부터 알아봅시다(~~분량 채우기~~). 

@@ -20,7 +20,12 @@ Probabilistic Method로 Combinatorial Object의 존재성을 보이기 위해서
 #### Theorem
 $K_n$ 을 n개의 정점을 가진 complete graph라고 하자.
 
+<blockquote class = "theorem">
+
 If $\binom{n}{k} 2^{-\binom{k}{2}+1} \lt 1$, then it is possible to color the edges of $K_n$ with two colors so that it has no monochromatic $K_k$ subgraph.
+
+</blockquote>
+
 #### Proof
 ~~초장부터 훅 들어오네~~
 
