@@ -292,9 +292,9 @@ $X_i, X_j$의 Covariance는 $\|C_i \cap C_j\| = 0, 1, 2, 3$으로 case를 나눠
 다 왔습니다! 이제 지금까지 진행한 것을 종합해봅시다. $p = \mathcal{w}(n^{-2/3})$이므로, 
 
 $$
-\begin{align*} \mathbf{Var}[X] &\leq \mathbf{E}[X] + \sum_{i\neq j} \mathbf{Cov}(X_i, X_j) \\
-&= \binom{n}{4} p^6 + \binom{n}{6}\binom{6}{2;2;2} p^{11} + \binom{n}{5}\binom{5}{3;1;1} p^9 \\
-&= \Theta(n^4 p^6) + \Theta(n^6 p^{11}) + \Theta(n^5 p^9) \\
+\begin{align*} \mathbf{Var}[X] &\leq \mathbf{E}[X] + \sum_{i\neq j} \mathbf{Cov}(X_i, X_j) \\[1ex]
+&= \binom{n}{4} p^6 + \binom{n}{6}\binom{6}{2;2;2} p^{11} + \binom{n}{5}\binom{5}{3;1;1} p^9 \\[2ex]
+&= \Theta(n^4 p^6) + \Theta(n^6 p^{11}) + \Theta(n^5 p^9) \\[2ex]
 &= \mathcal{o}(n^8 p^{12}) = \mathcal{o}((\mathbf{E}[X])^2)
 \end{align*}
 $$
